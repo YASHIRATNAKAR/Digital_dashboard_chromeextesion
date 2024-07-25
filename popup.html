@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Digital Dashboard</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    
+    <div class="widget">
+      <h2>Google Spreadsheet</h2>
+      <iframe src="https://docs.google.com/spreadsheets/d/1NbLMxr6tmoiAmwOY1PbeogWXKlvAPnNxwklw7IblpNg/edit?usp=sharing"></iframe>
+    </div>
+
+    
+    <div class="widget pomodoro-widget">
+        <h2>Pomodoro Timer</h2>
+        <div id="pomodoro-timer">
+          <div id="time">25:00</div>
+          <div class="pomodoro-buttons">
+            <button id="start-pomodoro">Start</button>
+            <button id="stop-pomodoro">Stop</button>
+            <button id="reset-pomodoro">Reset</button>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="widget google-calendar-widget">
+        <h2>Google Calendar</h2>
+        <a href="https://calendar.google.com/" target="_blank">
+          Open Google Calendar
+        </a>
+      </div>
+
+    
+    <div class="widget">
+        <h3>Music Player</h3>
+        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+
+
+      <div class="widget book-quote-widget">
+        <h2>Book + Quote</h2>
+        <div id="book-quote">
+          <div class="book-info">
+            <input type="text" id="book-title-input" placeholder="Enter book title">
+            <input type="text" id="book-author-input" placeholder="Enter author name">
+          </div>
+    
+        </div>
+      </div>
+  
+
+    
+    <div class="widget">
+      <h2>Issue Tracker</h2>
+      <form id="issue-form">
+        <input type="text" id="issue-title" placeholder="Issue Title" required>
+        <textarea id="issue-description" placeholder="Issue Description" required></textarea>
+        <button type="submit">Submit Issue</button>
+      </form>
+    </div>
+
+  
+    <div class="widget">
+      <h2>Daily Growth Checklist</h2>
+      <ul id="dgc-list">
+        <li><input type="checkbox" id="task1"> Task 1</li>
+        <li><input type="checkbox" id="task2"> Task 2</li>
+        <li><input type="checkbox" id="task3"> Task 3</li>
+      </ul>
+    </div>
+
+    
+    <div class="widget announcements-widget">
+        <h2>Announcements</h2>
+        <input type="text" id="announcement-input" placeholder="Enter new announcement">
+        <button id="add-announcement">Add Announcement</button>
+      </div>
+  
+
+    
+    <div class="widget steps-tracker-widget">
+        <h2>Steps Tracker</h2>
+        <div id="steps-tracker">
+          <p>Total Steps: <span id="steps">0</span></p>
+          <input type="number" id="steps-input" placeholder="Enter steps" min="0">
+          <button id="add-steps">Add Steps</button>
+          <button id="reset-steps">Reset Steps</button>
+        </div>
+      </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

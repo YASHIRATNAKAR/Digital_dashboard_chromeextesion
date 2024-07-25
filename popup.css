@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #c2b5ba;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .widget {
+    background-color: #4b8ccd;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 500px;
+    width: 500px;
+  }
+  
+  iframe,
+  audio,
+  #timer,
+  #announcements,
+  #steps-tracker {
+    width: 100%;
+    height: 100%;
+  }
+  
+  iframe {
+    height: calc(100% - 40px); 
+  }
+  
+  audio {
+    height: calc(100% - 40px); 
+  }
+  
+  #timer {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+.book-quote-widget {
+
+    text-align: center;
+    
+  }
+  
+  .book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .book-info input {
+    width: 80%;
+    max-width: 300px;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  #book-title-input {
+    font-size: 1em;
+  }
+  
+  #book-author-input {
+    font-size: 0.9em;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .book-info {
+      padding: 8px;
+    }
+  
+    #book-title-input,
+    #book-author-input {
+      font-size: 0.9em;
+    }
+  
+    
+  }
+  
+
+  .pomodoro-widget {
+   
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #pomodoro-timer {
+    
+    align-items: center;
+    
+    width: 100px;
+  }
+  
+  #time {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .pomodoro-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .pomodoro-buttons button {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: rgb(8, 8, 9);
+    background-color: #e6ebf1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pomodoro-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  #dgc-list {
+    list-style: none;
+    align-content: center;
+    padding: 0;
+  }
+  
+  #dgc-list li {
+    margin: 5px 0;
+  }
+  
+  #dgc-list input {
+    margin-right: 10px;
+  }
+  
+ 
+.announcements-widget {
+    
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+
+  
+  #announcement-input {
+    width: 80%;
+    max-width: 300px;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #announcement-input,
+    button {
+      font-size: 0.9em;
+    }
+  }
+  
+  
+.steps-tracker-widget {
+    align-items: center;
+    text-align: center;
+    
+  }
+  
+  #steps-tracker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #steps-tracker p {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  #steps-input {
+    width: 80%;
+    max-width: 300px;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 600px) {
+    #steps-tracker p {
+      font-size: 1.2em;
+    }
+  
+    #steps-input,
+    button {
+      font-size: 0.9em;
+    }
+  }
+  
+  

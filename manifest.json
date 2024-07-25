@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Digital Dashboard",
+    "version": "1.0",
+    "description": "A digital dashboard with various widgets.",
+    "permissions": ["activeTab"],
+    "chrome_url_overrides":{
+        "newtab": "popup.html"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+
+  }
+  
